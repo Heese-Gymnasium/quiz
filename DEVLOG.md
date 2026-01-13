@@ -1,7 +1,7 @@
 # Entwicklungstagebuch
 
 _Plattform:_ Pygame </br>
-_Teilnehmer:_ Peter, Vasilje, Anna, Eldar
+_Teilnehmer:_ Peter, VasilIje, Anna, Eldar
 
 **Tag 1:** Idee bestimmt (genauer: Quiz-App)
 
