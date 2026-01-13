@@ -9,3 +9,7 @@ Vorläufige Vorhaben: Multiplayer (Kahoot-ähnlich), Fragen finden/erfinden, ent
 
 weitere Vermerke: Arbeitsteilung
 
+git checkout main
+git pull
+git checkout eldar
+git merge main
