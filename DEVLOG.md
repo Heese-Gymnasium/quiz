@@ -26,3 +26,14 @@ git merge main
 **Tag 2:** 
 
 Tutorial für 2D Godot Software Entwicklung:  https://www.youtube.com/watch?v=LOhfqjmasi0
+
+neue Ideen:
+
+  -2d character der freeroamen kann
+  -sobald man tür betritt, wird alles schwarz und eine neuer raum (den man von aussen nicht sehen kann)
+  -ansicht wie undertale oder stardew valley
+  -wenn man frage falsch beantwortet, wir beim neuen eintreten derselben tür eine andere frage sein
+  -man muss eine bestimmte anzahl an fragen richtig beantworten, um die nachste zone betreten zu konnen
+  -man muss nicht alle fragen richtig beantworten, um das spiel zu gewinnen. doch wenn man alles richtig hat,
+  dann unlockt man irgdenwas spezielles (noch kein plan)
+  
