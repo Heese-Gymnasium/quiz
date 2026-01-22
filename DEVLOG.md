@@ -3,7 +3,7 @@
 _Plattform:_ Pygame </br>
 _Teilnehmer:_ Peter, VasilIje, Anna, Eldar
 
-## Wie man Git unter WIndows benutzt
+## Wie man Git unter Windows benutzt
 
 Proxy einstellen: git config http.proxy http://10.16.1.1:8080
 
