@@ -40,5 +40,10 @@ neue Ideen:
   -man muss eine bestimmte anzahl an fragen richtig beantworten, um die nachste zone betreten zu konnen
   
   -man muss nicht alle fragen richtig beantworten, um das spiel zu gewinnen. doch wenn man alles richtig hat,
-  dann unlockt man irgdenwas spezielles (noch kein plan)
+  dann unlockt man irgdenwas spezielles (z. B. easter egg)
+
+
+**Tag 3:**
+
+Texturen rausgesucht, erste Schritte zur Erstellung der Map (Erfahrung gesammelt)
   
