@@ -1,6 +1,6 @@
 # Entwicklungstagebuch
 
-_Plattform:_ Pygame </br>
+_Plattform:_ Godot </br>
 _Teilnehmer:_ Peter, VasilIje, Anna, Eldar
 
 ## Wie man Git unter Windows benutzt
