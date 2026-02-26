@@ -414,6 +414,89 @@ position = Vector2(0, 1)
 [node name="Destination" parent="Area2D/Door" index="1" groups=["Player"]]
 position = Vector2(70, -170)
 
+[node name="Door2" parent="Area2D" instance=ExtResource("2_03na7")]
+position = Vector2(0, -109)
+
+[node name="Destination" parent="Area2D/Door2" index="1"]
+position = Vector2(5, 143)
+
+[node name="Door3" parent="Area2D/Door2" instance=ExtResource("2_03na7")]
+position = Vector2(228.00003, -192)
+rotation = -1.5731252
+
+[node name="Destination" parent="Area2D/Door2/Door3" index="1"]
+position = Vector2(-356.74426, 319.17)
+
+[node name="Door4" parent="Area2D/Door2" instance=ExtResource("2_03na7")]
+position = Vector2(-206.00002, -192)
+rotation = -1.5731252
+
+[node name="Destination" parent="Area2D/Door2/Door4" index="1"]
+position = Vector2(-351.19794, -344.81882)
+
+[node name="Door5" parent="Area2D/Door2" instance=ExtResource("2_03na7")]
+position = Vector2(-206.00002, -192)
+rotation = -1.5731252
+
+[node name="CollisionShape2D" parent="Area2D/Door2/Door5" index="0"]
+position = Vector2(-493.97302, -12.150435)
+
+[node name="Destination" parent="Area2D/Door2/Door5" index="1"]
+position = Vector2(-493.6633, -145.15007)
+
+[node name="Door6" parent="Area2D/Door2" instance=ExtResource("2_03na7")]
+position = Vector2(-206.00002, -192)
+rotation = -1.5731252
+
+[node name="CollisionShape2D" parent="Area2D/Door2/Door6" index="0"]
+position = Vector2(-492.71686, -122.14781)
+
+[node name="Destination" parent="Area2D/Door2/Door6" index="1"]
+position = Vector2(-497.09644, 40.84243)
+
+[node name="Door7" parent="Area2D" instance=ExtResource("2_03na7")]
+position = Vector2(0, -109)
+
+[node name="CollisionShape2D" parent="Area2D/Door7" index="0"]
+position = Vector2(-542, 99)
+
+[node name="Destination" parent="Area2D/Door7" index="1"]
+position = Vector2(-55, -67)
+
+[node name="Door3" parent="Area2D/Door7" instance=ExtResource("2_03na7")]
+position = Vector2(228.00003, -192)
+rotation = -1.5731252
+
+[node name="Destination" parent="Area2D/Door7/Door3" index="1"]
+position = Vector2(-356.74426, 319.17)
+
+[node name="Door4" parent="Area2D/Door7" instance=ExtResource("2_03na7")]
+position = Vector2(-206.00002, -192)
+rotation = -1.5731252
+
+[node name="Destination" parent="Area2D/Door7/Door4" index="1"]
+position = Vector2(-351.19794, -344.81882)
+
+[node name="Door5" parent="Area2D/Door7" instance=ExtResource("2_03na7")]
+position = Vector2(-206.00002, -192)
+rotation = -1.5731252
+
+[node name="CollisionShape2D" parent="Area2D/Door7/Door5" index="0"]
+position = Vector2(-493.97302, -12.150435)
+
+[node name="Destination" parent="Area2D/Door7/Door5" index="1"]
+position = Vector2(-493.6633, -145.15007)
+
+[node name="Door6" parent="Area2D/Door7" instance=ExtResource("2_03na7")]
+position = Vector2(-206.00002, -192)
+rotation = -1.5731252
+
+[node name="CollisionShape2D" parent="Area2D/Door7/Door6" index="0"]
+position = Vector2(-492.71686, -122.14781)
+
+[node name="Destination" parent="Area2D/Door7/Door6" index="1"]
+position = Vector2(-497.09644, 40.84243)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Player"]]
 position = Vector2(-49, -16)
 collision_layer = 255
@@ -436,3 +519,13 @@ texture = ExtResource("3_03na7")
 position = Vector2(9, 105)
 
 [editable path="Area2D/Door"]
+[editable path="Area2D/Door2"]
+[editable path="Area2D/Door2/Door3"]
+[editable path="Area2D/Door2/Door4"]
+[editable path="Area2D/Door2/Door5"]
+[editable path="Area2D/Door2/Door6"]
+[editable path="Area2D/Door7"]
+[editable path="Area2D/Door7/Door3"]
+[editable path="Area2D/Door7/Door4"]
+[editable path="Area2D/Door7/Door5"]
+[editable path="Area2D/Door7/Door6"]

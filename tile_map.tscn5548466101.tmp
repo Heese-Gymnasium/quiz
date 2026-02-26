@@ -412,7 +412,7 @@ position = Vector2(110, 47)
 position = Vector2(0, 1)
 
 [node name="Destination" parent="Area2D/Door" index="1" groups=["Player"]]
-position = Vector2(70, -170)
+position = Vector2(3, -186)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Player"]]
 position = Vector2(-49, -16)

@@ -1,5 +1,5 @@
 extends CollisionShape2D
-
+@export var telep_zone
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
