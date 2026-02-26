@@ -46,4 +46,7 @@ neue Ideen:
 **Tag 3:**
 
 Texturen rausgesucht, erste Schritte zur Erstellung der Map (Erfahrung gesammelt)
-  
+
+**Tag 4.**
+
+Anfang Frontend: CollisionLayer, PlayerMovement hinzugefügt, sowie Türemmechanismus implementiert (noch ohne Sprite).
