@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://1wy1edjxivmg" path="res://door.tscn" id="2_03na7"]
 [ext_resource type="Script" uid="uid://rfn7lskndu37" path="res://character_body_2d.gd" id="2_35kre"]
 [ext_resource type="Texture2D" uid="uid://c86ulpsupjn6s" path="res://icon.svg" id="3_03na7"]
-[ext_resource type="Script" uid="uid://bujcjax42iu4t" path="res://collision_shape_2d.gd" id="5_xftlc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1n30v"]
 resource_name = "test"
@@ -421,7 +420,8 @@ position = Vector2(-12, 12)
 script = ExtResource("2_35kre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(40, 100)
+visible = false
+position = Vector2(15.5, 108.5)
 shape = SubResource("RectangleShape2D_35kre")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
@@ -440,20 +440,5 @@ position = Vector2(55, 43)
 collision_layer = 255
 collision_mask = 255
 
-[node name="Door" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(110, 48)
-
-[node name="Destination" parent="Door" index="1"]
-position = Vector2(0, 27)
-
-[node name="Door2" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(110, -62)
-
-[node name="CollisionShape2D" parent="Door2" index="0"]
-script = ExtResource("5_xftlc")
-
-[node name="Destination" parent="Door2" index="1"]
-position = Vector2(0, -37)
-
-[editable path="Door"]
-[editable path="Door2"]
+[node name="Door" parent="StaticBody2D" instance=ExtResource("2_03na7")]
+position = Vector2(55, 4)
