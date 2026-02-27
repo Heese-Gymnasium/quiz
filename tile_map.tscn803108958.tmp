@@ -440,13 +440,5 @@ position = Vector2(55, 43)
 collision_layer = 255
 collision_mask = 255
 
-[node name="Door" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(-5, -2)
-
-[node name="CollisionShape2D" parent="Door" index="0"]
-position = Vector2(117, 38)
-
-[node name="Destination" parent="Door" index="1"]
-position = Vector2(111, -85)
-
-[editable path="Door"]
+[node name="Door" parent="StaticBody2D" instance=ExtResource("2_03na7")]
+position = Vector2(55, 4)
