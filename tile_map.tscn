@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dwhhdjy66l6gj"]
+[gd_scene load_steps=9 format=3 uid="uid://dwhhdjy66l6gj"]
 
 [ext_resource type="Texture2D" uid="uid://jwunlo12mvhw" path="res://Solaria Demo Tiles.png" id="1_7yhko"]
 [ext_resource type="PackedScene" uid="uid://1wy1edjxivmg" path="res://door.tscn" id="2_03na7"]
 [ext_resource type="Script" uid="uid://rfn7lskndu37" path="res://character_body_2d.gd" id="2_35kre"]
-[ext_resource type="Texture2D" uid="uid://c86ulpsupjn6s" path="res://icon.svg" id="3_03na7"]
+[ext_resource type="Texture2D" uid="uid://d4ks6etljnstu" path="res://typ all final/sprite_00.png" id="4_03na7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1n30v"]
 resource_name = "test"
@@ -386,7 +386,7 @@ sources/0 = SubResource("TileSetAtlasSource_1n30v")
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_35kre"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_35kre"]
-size = Vector2(35, 37)
+size = Vector2(20.75, 38)
 
 [node name="TileMap" type="TileMap"]
 texture_filter = 1
@@ -420,19 +420,17 @@ position = Vector2(-12, 12)
 script = ExtResource("2_35kre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(40, 100)
+position = Vector2(13.375, 98)
 shape = SubResource("RectangleShape2D_35kre")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-
-[node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
-texture_filter = 1
-position = Vector2(40, 100)
-scale = Vector2(0.2734375, 0.2890625)
-texture = ExtResource("3_03na7")
+position = Vector2(14.499997, 97.5)
+scale = Vector2(1.59375, 1.5937499)
+texture = ExtResource("4_03na7")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(9, 105)
+zoom = Vector2(2, 2)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(55, 43)
@@ -449,7 +447,12 @@ position = Vector2(0, -147)
 position = Vector2(110, -62)
 
 [node name="Destination" parent="Door2" index="1"]
-position = Vector2(1, 137)
+position = Vector2(1, 130)
+
+[node name="Sprite00" type="Sprite2D" parent="."]
+position = Vector2(-157, 79)
+scale = Vector2(0.15625, 0.03125)
+texture = ExtResource("4_03na7")
 
 [editable path="Door"]
 [editable path="Door2"]
