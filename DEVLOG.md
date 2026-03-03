@@ -57,6 +57,7 @@ Probleme beim merge / rebase
 
 **Tag 5.**
 
-*Backend:* auf SQLite umgestellt. Login möglich, Sessions werden gespeichert.
+*Backend:* auf SQLite umgestellt. BCrypt für Passwörter. CSV-Loading überspringt beim Laden die erste Zeile. Login möglich, Sessions werden gespeichert. TODO: Sessions in Datenbank speichern.
+
 *Frontend:* Problem mit Türmechannismus: Teleport erneut funktionslos
 
