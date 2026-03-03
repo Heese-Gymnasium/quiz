@@ -52,4 +52,11 @@ Backend erstellt.
 
 Anfang Frontend: CollisionLayer, PlayerMovement hinzugefügt, sowie Türemmechanismus implementiert (noch ohne Sprite).
 Backend Login, Sessions, Vorbereitungen zum Einbau einer Datenbank (vorraussichtl. SQLite)
+Probleme beim merge / rebase
+
+
+**Tag 5.**
+
+*Backend:* auf SQLite umgestellt. Login möglich, Sessions werden gespeichert.
+*Frontend:* Problem mit Türmechannismus: Teleport erneut funktionslos
 
