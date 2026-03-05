@@ -48,16 +48,29 @@ neue Ideen:
 Texturen rausgesucht, erste Schritte zur Erstellung der Map (Erfahrung gesammelt)
 Backend erstellt.
 
-**Tag 4.**
+**Tag 4:**
 
 Anfang Frontend: CollisionLayer, PlayerMovement hinzugefügt, sowie Türemmechanismus implementiert (noch ohne Sprite).
 Backend Login, Sessions, Vorbereitungen zum Einbau einer Datenbank (vorraussichtl. SQLite)
 Probleme beim merge / rebase
 
 
-**Tag 5.**
+**Tag 5:**
 
 *Backend:* auf SQLite umgestellt. BCrypt für Passwörter. CSV-Loading überspringt beim Laden die erste Zeile. Login möglich, Sessions werden gespeichert. TODO: Sessions in Datenbank speichern.
 
 *Frontend:* Problem mit Türmechannismus: Teleport erneut funktionslos
 
+
+**Tag 6:**
+
+**!!Türenmechanismus funktioniert wieder!!** Entnommen aus altem Commit, dabei aber beim Mergen, sowie Pushen und Pullen folgende Probleme aufgetaucht: Bereits gepushte Änderungen, die aber kontraproduktiv waren (tileMAp -und CollisionShape-Dateien) mussten durch Github-KI rückgängig gemacht werden. Aktuell alles funktional.
+
+*folgende Dinge vorhanden:*
+
+- Charakter-Sprite
+- CharakterBody - Skript (für Bewegung)
+- zusätzliche MAp (WIP)
+- Tür-Sprite
+
+weitere Pläne: Tür mit Sprite versehen, Transition zwischen Teleport (Transition mit Fade von CanvasLayer), Floating Text über Türen implementieren (Vielleicht aber auch Textbox statt Floating Text)
