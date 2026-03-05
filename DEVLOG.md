@@ -52,4 +52,12 @@ Backend erstellt.
 
 Anfang Frontend: CollisionLayer, PlayerMovement hinzugefügt, sowie Türemmechanismus implementiert (noch ohne Sprite).
 Backend Login, Sessions, Vorbereitungen zum Einbau einer Datenbank (vorraussichtl. SQLite)
+Probleme beim merge / rebase
+
+
+**Tag 5.**
+
+*Backend:* auf SQLite umgestellt. BCrypt für Passwörter. CSV-Loading überspringt beim Laden die erste Zeile. Login möglich, Sessions werden gespeichert. TODO: Sessions in Datenbank speichern.
+
+*Frontend:* Problem mit Türmechannismus: Teleport erneut funktionslos
 
