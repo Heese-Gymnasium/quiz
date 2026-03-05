@@ -70,7 +70,7 @@ Probleme beim merge / rebase
 
 - Charakter-Sprite
 - CharakterBody - Skript (für Bewegung)
-- zusätzliche MAp (WIP)
+- zusätzliche Map (WIP)
 - Tür-Sprite
 
 weitere Pläne: Tür mit Sprite versehen, Transition zwischen Teleport (Transition mit Fade von CanvasLayer), Floating Text über Türen implementieren (Vielleicht aber auch Textbox statt Floating Text)
