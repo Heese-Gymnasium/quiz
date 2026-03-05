@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://jwunlo12mvhw" path="res://Solaria Demo Tiles.png" id="1_7yhko"]
 [ext_resource type="PackedScene" uid="uid://1wy1edjxivmg" path="res://door.tscn" id="2_03na7"]
 [ext_resource type="Script" uid="uid://rfn7lskndu37" path="res://character_body_2d.gd" id="2_35kre"]
-[ext_resource type="Texture2D" uid="uid://d4ks6etljnstu" path="res://typ all final/sprite_00.png" id="4_03na7"]
+[ext_resource type="Texture2D" uid="uid://c86ulpsupjn6s" path="res://icon.svg" id="3_03na7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1n30v"]
 resource_name = "test"
@@ -386,7 +386,7 @@ sources/0 = SubResource("TileSetAtlasSource_1n30v")
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_35kre"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_35kre"]
-size = Vector2(20.75, 38)
+size = Vector2(35, 37)
 
 [node name="TileMap" type="TileMap"]
 texture_filter = 1
@@ -415,82 +415,30 @@ shape = SubResource("SegmentShape2D_35kre")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 
-[node name="Door" parent="Area2D" instance=ExtResource("2_03na7")]
-position = Vector2(0, 1)
-
-[node name="Destination" parent="Area2D/Door" index="1" groups=["Player"]]
-position = Vector2(-48, -224)
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Player"]]
-position = Vector2(-49, -16)
-collision_layer = 255
-collision_mask = 255
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(-12, 12)
 script = ExtResource("2_35kre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(13.375, 98)
+visible = false
+position = Vector2(15.5, 108.5)
 shape = SubResource("RectangleShape2D_35kre")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(14.499997, 97.5)
-scale = Vector2(1.59375, 1.5937499)
-texture = ExtResource("4_03na7")
+
+[node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(40, 100)
+scale = Vector2(0.2734375, 0.2890625)
+texture = ExtResource("3_03na7")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(9, 105)
 
-[node name="Door" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(110, -62)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(55, 43)
+collision_layer = 255
+collision_mask = 255
 
-[node name="Destination" parent="Door" index="1"]
-position = Vector2(1, 70)
-
-[node name="Door3" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(654, 48)
-
-[node name="Destination" parent="Door3" index="1"]
-position = Vector2(-406, -372)
-
-[node name="Door2" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(336.00003, -258)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door2" index="1"]
-position = Vector2(317.77792, -290.34317)
-
-[node name="Door4" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(444, 238)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door4" index="1"]
-position = Vector2(-79.22308, 184.33588)
-
-[node name="Door5" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(336.00003, 238)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door5" index="1"]
-position = Vector2(-51.775787, -183.7832)
-
-[node name="Door6" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(-100, 238.00003)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door6" index="1"]
-position = Vector2(-52.957523, 247.22562)
-
-[node name="Door7" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(-207.99997, 238.00003)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door7" index="1"]
-position = Vector2(-71.60689, -143.69919)
-
-[editable path="Area2D/Door"]
-[editable path="Door"]
-[editable path="Door3"]
-[editable path="Door2"]
-[editable path="Door4"]
-[editable path="Door5"]
-[editable path="Door6"]
-[editable path="Door7"]
+[node name="Door" parent="StaticBody2D" instance=ExtResource("2_03na7")]
+position = Vector2(55, 4)
