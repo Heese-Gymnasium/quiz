@@ -424,8 +424,16 @@ shape = SubResource("SegmentShape2D_35kre")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(-13, 14)
+[node name="Door" parent="Area2D" instance=ExtResource("2_03na7")]
+position = Vector2(0, 1)
+
+[node name="Destination" parent="Area2D/Door" index="1" groups=["Player"]]
+position = Vector2(-48, -224)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Player"]]
+position = Vector2(-49, -16)
+collision_layer = 255
+collision_mask = 255
 script = ExtResource("2_35kre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -442,36 +450,63 @@ texture = ExtResource("4_03na7")
 position = Vector2(6, 101)
 =======
 position = Vector2(9, 105)
-zoom = Vector2(2, 2)
->>>>>>> 3dbef4ea49b8b91782e553ba196d5dded8999520
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(54, 55)
-collision_layer = 255
-collision_mask = 255
-script = ExtResource("4_xftlc")
 
 [node name="Door" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(110, 48)
+position = Vector2(110, -62)
 
 [node name="Destination" parent="Door" index="1"]
-position = Vector2(44, -171)
+position = Vector2(1, 70)
 
-[node name="Door" parent="Door" instance=ExtResource("2_03na7")]
-position = Vector2(0, -110)
+[node name="Door3" parent="." instance=ExtResource("2_03na7")]
+position = Vector2(654, 48)
+
+[node name="Destination" parent="Door3" index="1"]
+position = Vector2(-406, -372)
+
+[node name="Door2" parent="." instance=ExtResource("2_03na7")]
+position = Vector2(336.00003, -258)
+rotation = 1.5750151
 
 <<<<<<< HEAD
 [node name="Destination" parent="Door/Door" index="1"]
 position = Vector2(39, 140)
 =======
 [node name="Destination" parent="Door2" index="1"]
-position = Vector2(1, 130)
+position = Vector2(317.77792, -290.34317)
 
-[node name="Sprite00" type="Sprite2D" parent="."]
-position = Vector2(-157, 79)
-scale = Vector2(0.15625, 0.03125)
-texture = ExtResource("4_03na7")
->>>>>>> 3dbef4ea49b8b91782e553ba196d5dded8999520
+[node name="Door4" parent="." instance=ExtResource("2_03na7")]
+position = Vector2(444, 238)
+rotation = 1.5750151
 
+[node name="Destination" parent="Door4" index="1"]
+position = Vector2(-79.22308, 184.33588)
+
+[node name="Door5" parent="." instance=ExtResource("2_03na7")]
+position = Vector2(336.00003, 238)
+rotation = 1.5750151
+
+[node name="Destination" parent="Door5" index="1"]
+position = Vector2(-51.775787, -183.7832)
+
+[node name="Door6" parent="." instance=ExtResource("2_03na7")]
+position = Vector2(-100, 238.00003)
+rotation = 1.5750151
+
+[node name="Destination" parent="Door6" index="1"]
+position = Vector2(-52.957523, 247.22562)
+
+[node name="Door7" parent="." instance=ExtResource("2_03na7")]
+position = Vector2(-207.99997, 238.00003)
+rotation = 1.5750151
+
+[node name="Destination" parent="Door7" index="1"]
+position = Vector2(-71.60689, -143.69919)
+
+[editable path="Area2D/Door"]
 [editable path="Door"]
-[editable path="Door/Door"]
+[editable path="Door3"]
+[editable path="Door2"]
+[editable path="Door4"]
+[editable path="Door5"]
+[editable path="Door6"]
+[editable path="Door7"]

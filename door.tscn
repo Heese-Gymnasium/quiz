@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://da6vn4qeavakw" path="res://door.gd" id="1_v6xrn"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_v6xrn"]
-a = Vector2(32, 10)
-b = Vector2(-32, 10)
+a = Vector2(32, 9)
+b = Vector2(-32, 9)
 
 [sub_resource type="GDScript" id="GDScript_ba8gm"]
 
