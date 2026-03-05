@@ -412,7 +412,7 @@ position = Vector2(110, 47)
 position = Vector2(0, 1)
 
 [node name="Destination" parent="Area2D/Door" index="1" groups=["Player"]]
-position = Vector2(-48, -224)
+position = Vector2(70, -170)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Player"]]
 position = Vector2(-49, -16)
@@ -435,58 +435,4 @@ texture = ExtResource("3_03na7")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(9, 105)
 
-[node name="Door" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(110, -62)
-
-[node name="Destination" parent="Door" index="1"]
-position = Vector2(1, 70)
-
-[node name="Door3" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(654, 48)
-
-[node name="Destination" parent="Door3" index="1"]
-position = Vector2(-406, -372)
-
-[node name="Door2" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(336.00003, -258)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door2" index="1"]
-position = Vector2(317.77792, -290.34317)
-
-[node name="Door4" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(444, 238)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door4" index="1"]
-position = Vector2(-79.22308, 184.33588)
-
-[node name="Door5" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(336.00003, 238)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door5" index="1"]
-position = Vector2(-51.775787, -183.7832)
-
-[node name="Door6" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(-100, 238.00003)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door6" index="1"]
-position = Vector2(-52.957523, 247.22562)
-
-[node name="Door7" parent="." instance=ExtResource("2_03na7")]
-position = Vector2(-207.99997, 238.00003)
-rotation = 1.5750151
-
-[node name="Destination" parent="Door7" index="1"]
-position = Vector2(-71.60689, -143.69919)
-
 [editable path="Area2D/Door"]
-[editable path="Door"]
-[editable path="Door3"]
-[editable path="Door2"]
-[editable path="Door4"]
-[editable path="Door5"]
-[editable path="Door6"]
-[editable path="Door7"]
