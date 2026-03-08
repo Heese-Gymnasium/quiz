@@ -1,4 +1,4 @@
-# Entwicklungstagebuch – Quiz-Dungeon
+# Entwicklungstagebuch – Quiz
 
 _Plattform:_ Godot 4 (2D)  
 _Teilnehmer:_ Peter, Vasilije, Anna, Eldar
