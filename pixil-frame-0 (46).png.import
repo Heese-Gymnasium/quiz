@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jwunlo12mvhw"
-path="res://.godot/imported/Solaria Demo Tiles.png-e2412db50f791567f96e40f2f1f78e41.ctex"
+uid="uid://clis7gbw4ycvj"
+path="res://.godot/imported/pixil-frame-0 (46).png-1ac5145075e4aef2c22b7aa6a9f4890b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Solaria Demo Tiles.png"
-dest_files=["res://.godot/imported/Solaria Demo Tiles.png-e2412db50f791567f96e40f2f1f78e41.ctex"]
+source_file="res://pixil-frame-0 (46).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (46).png-1ac5145075e4aef2c22b7aa6a9f4890b.ctex"]
 
 [params]
 

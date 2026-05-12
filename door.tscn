@@ -1,22 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://1wy1edjxivmg"]
+[gd_scene load_steps=2 format=3 uid="uid://1wy1edjxivmg"]
 
-[ext_resource type="Script" uid="uid://da6vn4qeavakw" path="res://door.gd" id="1_v6xrn"]
+[ext_resource type="Script" uid="uid://da6vn4qeavakw" path="res://door.gd" id="1_ba8gm"]
 
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_v6xrn"]
-a = Vector2(32, 9)
-b = Vector2(-32, 9)
+[node name="Door" type="Node2D"]
+script = ExtResource("1_ba8gm")
 
-[sub_resource type="GDScript" id="GDScript_ba8gm"]
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="Door" type="Area2D" groups=["Player"]]
-script = ExtResource("1_v6xrn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, -11)
-shape = SubResource("SegmentShape2D_v6xrn")
-script = SubResource("GDScript_ba8gm")
-
-[node name="Destination" type="Marker2D" parent="."]
-position = Vector2(0, -17)
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
